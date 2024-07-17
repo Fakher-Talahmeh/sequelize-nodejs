@@ -8,6 +8,7 @@ router.post("/product", (req, res, next) => {
     imageUrl: req.body.imageUrl,
     price: req.body.price,
     description: req.body.description,
+    userId:req.body.userId
   })
     .then((product) => {
       res.status(201).send(product);
